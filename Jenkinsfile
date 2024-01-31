@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+    node {
+        label 'my-defined-label'
+        customWorkspace 'AGENT-1'
+    }
+}
 
     stages {
         stage('Build') {
