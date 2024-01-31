@@ -1,8 +1,7 @@
 pipeline {
     agent {
     node {
-        label 'my-defined-label'
-        customWorkspace 'AGENT-1'
+        label 'AGENT-1'
     }
 }
 
